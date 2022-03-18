@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Todo</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <h1 id="h1">Grocery Todo List</h1>
+    <section>
+        <div>
+            <h1>Add Item to List</h1>
+            <form action="">
+                <label for="title">Grocery Name:</label><br>
+                <input type="text" id="title" required name="title" placeholder="title"><br>
+
+                <label for="priority">Priority:</label><br>
+                <select name="priority" id="priority" required>
+                    <option value="">Select Priority</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+
+                </select><br>
+                <label for="quantity">Quantity in KGs:</label><br>
+                <input type="number" placeholder="quantity" min="0" name="quantity" id="quantity" required>
+
+                <br>
+                <label for="price">Price in Dollars:</label>
+                <br>
+                <input type="number" placeholder="price" name="price" id="price" required min="1">
+                <button>Add</button>
+            </form>
+        </div>
+        <div>
+            <h1>Product Info</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Grocery</th>
+                        <th>Priority</th>
+                        <th>Quantity (kg)</th>
+                        <th>Price ($)</th>
+                        <th>Total ($)</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="product.js"></script>
+</body>
+
+</html>
